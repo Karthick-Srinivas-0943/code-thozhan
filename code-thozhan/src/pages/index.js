@@ -36,6 +36,7 @@ export default function Home() {
         body: JSON.stringify({
           model: "gpt-3.5-turbo",
           messages: updatedMessages,
+          stream: true,
         }),
       });
 
@@ -111,5 +112,3 @@ export default function Home() {
     </>
   );
 }
-
-
